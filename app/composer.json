@@ -3,8 +3,13 @@
     "authors": [
         {
             "name": "husui",
-            "email": "t4o0m0@gmail.com"
+            "email": "t4o0m0@gmamil.com"
         }
     ],
-    "require": {}
+    "config" : {
+        "vendor-dir": "Vendor"
+    },
+    "require": {
+        "cakephp/cakephp": "2.5.*"
+    }
 }
