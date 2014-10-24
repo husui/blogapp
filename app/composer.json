@@ -1,0 +1,10 @@
+{
+    "name": "php_ci_book/blogapp",
+    "authors": [
+        {
+            "name": "husui",
+            "email": "t4o0m0@gmail.com"
+        }
+    ],
+    "require": {}
+}
