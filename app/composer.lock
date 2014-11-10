@@ -4,8 +4,46 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d24f153b0a5141776d328f83e087bdc3",
+    "hash": "26c73f1a8305088fbe6498d8299cea68",
     "packages": [
+        {
+            "name": "cakedc/migrations",
+            "version": "2.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/migrations.git",
+                "reference": "0d62dda64f4386fb29e68e3ba4d022aa90252aee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/0d62dda64f4386fb29e68e3ba4d022aa90252aee",
+                "reference": "0d62dda64f4386fb29e68e3ba4d022aa90252aee",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.2.8"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Migrations Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "cakephp",
+                "migrations"
+            ],
+            "time": "2014-10-18 08:52:31"
+        },
         {
             "name": "cakephp/cakephp",
             "version": "2.5.5",
@@ -140,6 +178,54 @@
             "time": "2014-08-18 20:00:12"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": []
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-06-04 14:43:02"
+        },
+        {
             "name": "josegonzalez/cakephp-environments",
             "version": "1.0.0",
             "source": {
@@ -190,6 +276,48 @@
                 "environments"
             ],
             "time": "2014-04-13 10:27:24"
+        },
+        {
+            "name": "slywalker/boost_cake",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slywalker/cakephp-plugin-boost_cake.git",
+                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slywalker/cakephp-plugin-boost_cake/zipball/a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
+                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "twitter/bootstrap": "Bootstrap for Twitter"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yasuo Harada",
+                    "email": "slywalker.net@gmail.com",
+                    "homepage": "https://github.com/slywalker"
+                }
+            ],
+            "description": "BoostCake is a plugin for CakePHP using Bootstrap",
+            "homepage": "http://slywalker.github.io/cakephp-plugin-boost_cake/",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "time": "2014-01-09 03:56:57"
         }
     ],
     "packages-dev": [
@@ -1408,6 +1536,34 @@
                 "issues": "https://github.com/sizuhiko/Bdd/issues"
             },
             "time": "2014-05-17 09:01:21"
+        },
+        {
+            "name": "sizuhiko/fabricate",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sizuhiko/Fabricate.git",
+                "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sizuhiko/Fabricate/zipball/3b48de238a749577565cc2be4aa6721c9f5b60bf",
+                "reference": "3b48de238a749577565cc2be4aa6721c9f5b60bf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "sizuhiko",
+                    "email": "sizuhiko@gmail.com"
+                }
+            ],
+            "description": "CakePHP data generator for Testing",
+            "time": "2014-07-21 08:21:32"
         },
         {
             "name": "sizuhiko/spec-php",

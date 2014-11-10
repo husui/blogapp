@@ -16,6 +16,7 @@
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 require_once dirname(dirname(__FILE__)) . DS . 'Vendor' . DS . 'autoload.php';
+include dirname(__FILE__) . DS . 'bootstrap' . DS . 'environments.php';
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
@@ -60,6 +61,8 @@ require_once dirname(dirname(__FILE__)) . DS . 'Vendor' . DS . 'autoload.php';
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
+CakePlugin::load('Migrations');
+CakePlugin::load('BoostCake');
 
 /**
  * You can attach event listeners to the request lifecycle as Dispatcher Filter . By default CakePHP bundles two filters:
@@ -78,8 +81,8 @@ require_once dirname(dirname(__FILE__)) . DS . 'Vendor' . DS . 'autoload.php';
  * ));
  */
 Configure::write('Dispatcher.filters', array(
-	'AssetDispatcher',
-	'CacheDispatcher'
+    'AssetDispatcher',
+    'CacheDispatcher'
 ));
 
 /**
@@ -87,12 +90,12 @@ Configure::write('Dispatcher.filters', array(
  */
 App::uses('CakeLog', 'Log');
 CakeLog::config('debug', array(
-	'engine' => 'File',
-	'types' => array('notice', 'info', 'debug'),
-	'file' => 'debug',
+    'engine' => 'File',
+    'types' => array('notice', 'info', 'debug'),
+    'file' => 'debug',
 ));
 CakeLog::config('error', array(
-	'engine' => 'File',
-	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
-	'file' => 'error',
+    'engine' => 'File',
+    'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
+    'file' => 'error',
 ));
