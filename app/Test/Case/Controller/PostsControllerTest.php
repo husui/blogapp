@@ -1,6 +1,6 @@
 <?php
 App::uses('PostsController', 'Controller');
-App::uses('Fabricate', 'Fabricate.lib');
+App::uses('Fabricate', 'Fabricate.Lib');
 
 /**
  * PostsController Test Case

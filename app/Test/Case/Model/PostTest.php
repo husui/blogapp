@@ -1,6 +1,6 @@
 <?php
 App::uses('Post', 'Model');
-App::uses('Fabricate', 'Fabricate.lib');
+App::uses('Fabricate', 'Fabricate.Lib');
 
 /**
  * Post Test Case
