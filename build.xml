@@ -11,8 +11,7 @@
     <property name="vendorbindir"  value="${appdir}/Vendor/bin" />
 
     <!-- Build(1) -->
-    <!-- target name="build" depends="prepare,caketest,behat,phpcs,phpmd,phpcpd" / -->
-    <target name="build" depends="prepare,caketest,behat" />
+    <target name="build" depends="prepare,caketest,behat,phpcs,phpmd,phpcpd" />
 
     <!-- Prepare(2) -->
     <target name="prepare" description="Prepare for build">
