@@ -11,7 +11,7 @@
     <property name="vendorbindir"  value="${appdir}/Vendor/bin" />
 
     <!-- Build(1) -->
-    <target name="build" depends="prepare,caketest,behat,phpcs,phpcpd,phpdoc" />
+    <target name="build" depends="prepare,caketest,behat,phpcs,phpcpd,phpmd,phpdoc" />
     <!--target name="build" depends="prepare,caketest,behat,phpcs,phpmd,phpcpd,phpdoc" /-->
 
     <!-- Prepare(2) -->
@@ -67,7 +67,7 @@
             <arg line="${appdir}" />
             <arg line="xml" />
             <arg line="codesize,unusedcode,design,naming" />
-            <arg line="--exclude${appdir}/Test,${appdir}/Vendor,${appdir}/Plugin,${appdir}/Config/Migration,${appdir}/Config/Schema"/>
+            <arg line="--exclude ${appdir}/Test,${appdir}/Vendor,${appdir}/Plugin,${appdir}/Config/Migration,${appdir}/Config/Schema"/>
             <arg line="--reportfile ${appdir}/reports/phpmd.xml" />
         </exec>
     </target>
